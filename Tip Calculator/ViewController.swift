@@ -10,11 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: Properties
+    
+    @IBOutlet weak var AmountOfBill: UITextField!
+    
+    
+    @IBOutlet weak var AmountOfPeople: UITextField!
+    
+    
+    @IBOutlet weak var TipInPercent: UITextField!
+    
+    
+    // MARK: Methods
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    
+    
+    
     }
-
-
+    
+    
+    
+   
 }
 
