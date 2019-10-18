@@ -37,7 +37,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount of people: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ4-Ou-4ai">
                                 <rect key="frame" x="27" y="272" width="220" height="33"/>
@@ -51,7 +51,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip in %:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeQ-km-KsM">
                                 <rect key="frame" x="146" y="397" width="101" height="33"/>
@@ -65,7 +65,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8Z-I1-rnL">
                                 <rect key="frame" x="151" y="502" width="113" height="45"/>
@@ -109,9 +109,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="AmountOfBill" destination="n7e-r0-ZPn" id="bH6-n5-K4C"/>
-                        <outlet property="AmountOfPeople" destination="n7e-r0-ZPn" id="mAq-Lk-nXw"/>
-                        <outlet property="TipInPercent" destination="ZjK-zq-34a" id="a8b-aF-bic"/>
+                        <outlet property="SubmittedAmountOfBill" destination="EAp-ur-gv0" id="Lc2-J3-oby"/>
+                        <outlet property="SubmittedAmountOfPeople" destination="n7e-r0-ZPn" id="pow-Vd-68X"/>
+                        <outlet property="SubmittedTipInPercent" destination="ZjK-zq-34a" id="HuN-Bb-gvC"/>
                         <outlet property="TipPerPersonLabel" destination="duZ-M3-LvM" id="kKG-v9-x44"/>
                         <outlet property="TotalTipLabel" destination="Hci-js-a9o" id="tWD-hT-flP"/>
                     </connections>

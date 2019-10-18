@@ -13,10 +13,8 @@ class ViewController: UIViewController {
     // MARK: Properties
     
     @IBOutlet weak var SubmittedAmountOfBill: UITextField!
-    
-    
+
     @IBOutlet weak var SubmittedAmountOfPeople: UITextField!
-    
     
     @IBOutlet weak var SubmittedTipInPercent: UITextField!
     
@@ -38,6 +36,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     
+        print("Hello")
     }
     
     
@@ -51,13 +50,13 @@ class ViewController: UIViewController {
         
         let TipInPercent = Double(TipInPercentText)!
         
-        let TotalTip = Bill/(TipInPercent/100)
+        let TotalTip = Bill/(TipInPercent)
         
         let AmountOfPeopleText = SubmittedAmountOfPeople.text!
         
         let AmountOfPeople = Double(AmountOfPeopleText)!
         
-        let TipPerPerson = TotalTip/AmountOfPeople
+        let TipPerPerson = TotalTip / AmountOfPeople
         
         TotalTipLabel.text = String(TotalTip)
         
