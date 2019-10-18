@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     
-        print("Hello")
+
     }
     
     
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         
         let TipInPercent = Double(TipInPercentText)!
         
-        let TotalTip = Bill/(TipInPercent)
+        let TotalTip = Bill*(TipInPercent/100)
         
         let AmountOfPeopleText = SubmittedAmountOfPeople.text!
         
