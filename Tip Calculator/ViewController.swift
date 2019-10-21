@@ -13,17 +13,11 @@ class ViewController: UIViewController {
     // MARK: Properties
     
     @IBOutlet weak var SubmittedAmountOfBill: UITextField!
-
     @IBOutlet weak var SubmittedAmountOfPeople: UITextField!
-    
     @IBOutlet weak var SubmittedTipInPercent: UITextField!
-    
     @IBOutlet weak var TotalTipLabel: UILabel!
-    
     @IBOutlet weak var TipPerPersonLabel: UILabel!
     
-    
-
     // Mark: Initializers
     
   
@@ -42,25 +36,32 @@ class ViewController: UIViewController {
     
     @IBAction func CalculateTheTip(_ sender: Any) {
         
+        // Get the user input
+        
         let BillText = SubmittedAmountOfBill.text!
-        
-        let Bill = Double(BillText)!
-        
         let TipInPercentText = SubmittedTipInPercent.text!
-        
-        let TipInPercent = Double(TipInPercentText)!
-        
-        let TotalTip = Bill*(TipInPercent/100)
-        
         let AmountOfPeopleText = SubmittedAmountOfPeople.text!
         
+        // Convert all values into Double
+        
+        let TipInPercent = Double(TipInPercentText)!
+        let Bill = Double(BillText)!
         let AmountOfPeople = Double(AmountOfPeopleText)!
         
+        // Calculate the Tip and the tip per person
+        
+        let TotalTip = Bill*(TipInPercent/100)
         let TipPerPerson = TotalTip / AmountOfPeople
         
-        TotalTipLabel.text = String(TotalTip)
+        // Send the results to the view
         
-        TipPerPersonLabel.text = String(TipPerPerson)
+        // TotalTipLabel.text = String(TotalTip)
+        // TotalTipLabel.text = "$\(TotalTip)"
+        TotalTipLabel.text = String(format:   "$%.2f ", TotalTip)
+        // TipPerPersonLabel.text = String(TipPerPerson)
+        // TipPerPersonLabel.text = "$\(TipPerPerson)"
+        TipPerPersonLabel.text = String(format: "$%.2f", TipPerPerson)
+        
     }
     
     
